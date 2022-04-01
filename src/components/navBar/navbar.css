@@ -1,0 +1,59 @@
+
+.nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.4rem;
+  padding-bottom: 3.4rem;
+  width: 100vw;
+  background-color: transparent;
+  /* background-color: var(--color-accent); */
+  min-width: 37.5rem;
+  position: fixed;
+  z-index: 99;
+}
+
+.nav--logo {
+  /* justify-self: center;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.nav--menu {
+  margin-right: 2.7rem;
+}
+
+.nav__list {
+  display: none;
+}
+
+.nav--logo_container {
+  width: 13.6rem;
+  height: 2rem;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .nav--menu {
+    display: none;
+  }
+
+  .nav__list {
+    margin: 0 13.1rem;
+    display: flex;
+    column-gap: 5.1rem;
+  }
+
+  .nav__item {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}

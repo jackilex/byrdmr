@@ -1,0 +1,74 @@
+.craft--section_container {
+  background-color: white;
+  text-align: center;
+  /* padding-bottom: 5.5rem; */
+  /* overflow: scroll; */
+  padding: 2.7rem;
+  height: 100vh;
+  padding-top: 10vh;
+  min-height: 834px;
+  padding-top: 10vh
+}
+
+.craft--section_image {
+  /* padding-top: 10vh; */
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 80%;
+  max-width: 53.7rem;
+  margin: auto;
+  min-height: 24rem;
+}
+
+.craft--section_image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.craft--secondary_container {
+  padding-top: 2.7rem;
+}
+
+.craft--secondary_body {
+}
+
+
+@media screen and (min-width: 768px){
+    .craft--section_image {
+        height: 58vh;
+        min-height: 40.7rem;
+    }
+    .craft--section_container{
+        min-height: 1035px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+  .craft--section_container {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    padding-left: 15.3rem;
+    padding-right: 13.6rem;
+    padding-top: 15.5rem;
+    min-height: 80.5rem;
+    height: 100vh;
+  }
+  .craft--section_image {
+    order: 2;
+    height: auto;
+    width: 40vw;
+    padding-top: 0;
+    margin: 0;
+    /* margin-top: 10vh; */
+  }
+
+  .craft--section_image > img {
+    max-height: 44.4rem;
+  }
+  .craft--secondary_container {
+    width: 50%;
+    /* align-self: start; */
+  }
+}
