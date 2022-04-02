@@ -3,8 +3,8 @@ import React from 'react'
 import "./homeSection.css"
 export default function HomeSection() {
   return (
-      <div
-      className={'home--section_container'}
+      <section
+      className={'home--section_container fh-vwp'}
     >
       <div
         className={'home--section_image'}
@@ -21,6 +21,6 @@ export default function HomeSection() {
       <h3>“The Fastest Drone on the Planet”</h3>
       <p>“The– The Wirecutter</p>
       </div>
-    </div>
+    </section>
   )
 }

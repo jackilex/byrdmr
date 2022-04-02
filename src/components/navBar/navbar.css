@@ -4,28 +4,29 @@
   display: flex;
   justify-content: space-between;
   padding-top: 3.4rem;
-  padding-bottom: 3.4rem;
+  padding-bottom: 1.4rem;
   width: 100vw;
   background-color: transparent;
   /* background-color: var(--color-accent); */
   min-width: 37.5rem;
   position: fixed;
   z-index: 99;
+ 
 }
 
-.nav--logo {
-  /* justify-self: center;
-  margin-left: auto;
-  margin-right: auto; */
-}
+
 
 .nav--menu {
   margin-right: 2.7rem;
 }
 
+.menu {
+  margin-right: 2.7rem;
+}
 .nav__list {
   display: none;
 }
+
 
 .nav--logo_container {
   width: 13.6rem;
@@ -34,6 +35,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 
 @media screen and (min-width: 1440px) {
   .nav--menu {

@@ -1,10 +1,10 @@
 .form--contact_container {
-  height: 100vh;
-  padding-top: 20vh;
+
+  padding-top: 6.8rem;
   background-color: #f2f2f2;
   padding-left: 6rem;
   padding-right: 6rem;
-  min-height: 50rem;
+
 }
 .form--contact_container label {
   margin-top: 3rem;

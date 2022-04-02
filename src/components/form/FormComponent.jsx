@@ -7,9 +7,9 @@ export default function FormComponent() {
 
 
   return (
-    <div
+    <section
   
-      className="form--contact_container">
+      className="form--contact_container fh-vwp">
       <form className="form--contact">
         <label htmlFor="name">FULL NAME</label>
         <input type="text" name="name" />
@@ -21,6 +21,6 @@ export default function FormComponent() {
       <button className="form--contact_btn">
         <Arrow />
       </button>
-    </div>
+    </section>
   );
 }

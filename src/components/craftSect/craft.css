@@ -1,23 +1,15 @@
 .craft--section_container {
-  background-color: white;
-  text-align: center;
-  /* padding-bottom: 5.5rem; */
-  /* overflow: scroll; */
-  padding: 2.7rem;
-  height: 100vh;
-  padding-top: 10vh;
-  min-height: 834px;
-  padding-top: 10vh
+  background-color: orange;
+  padding-top: 6.8rem;
+  position: relative;
 }
 
 .craft--section_image {
-  /* padding-top: 10vh; */
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 80%;
-  max-width: 53.7rem;
   margin: auto;
-  min-height: 24rem;
+  position: relative;
 }
 
 .craft--section_image > img {
@@ -26,49 +18,61 @@
   object-fit: cover;
 }
 .craft--secondary_container {
-  padding-top: 2.7rem;
+  padding-left: 2.7rem;
 }
 
 .craft--secondary_body {
 }
 
+.plus--one{
+  fill: red;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-@media screen and (min-width: 768px){
-    .craft--section_image {
-        height: 58vh;
-        min-height: 40.7rem;
-    }
-    .craft--section_container{
-        min-height: 1035px;
-    }
+.plus--two {
+  fill: red;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.plus--three {
+  fill: red;
+  position: absolute;
+  top: 80%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+}
+
+.plus--four {
+  fill: red;
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 768px) {
+  .craft--section_image {
+    max-width: 44rem;
+  }
+  .craft--section_container {
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .craft--section_container {
-    position: relative;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-around;
-    padding-left: 15.3rem;
-    padding-right: 13.6rem;
-    padding-top: 15.5rem;
-    min-height: 80.5rem;
-    height: 100vh;
+    padding-top: 21.4rem;
   }
   .craft--section_image {
     order: 2;
-    height: auto;
-    width: 40vw;
-    padding-top: 0;
+    max-width: 54.7rem;
     margin: 0;
-    /* margin-top: 10vh; */
-  }
-
-  .craft--section_image > img {
-    max-height: 44.4rem;
-  }
-  .craft--secondary_container {
-    width: 50%;
-    /* align-self: start; */
   }
 }

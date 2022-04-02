@@ -30,10 +30,13 @@
   font-size: 32px;
   line-height: 35px;
   color: #31211b;
-  margin-bottom: 1.1rem;
-  margin-top: 4.9rem;
+  /* margin-bottom: 1.1rem;
+  margin-top: 4.9rem; */
 }
 
+.fh-vwp{
+    min-height: 100vh;
+}
 .highligth {
   background-color: var(--color-secondary);
   width: 82px;
@@ -44,11 +47,13 @@
   display: grid;
 }
 
+
+
 @media screen and (min-width: 1440px){
    .tab{
         position: absolute;
         right: 0;
-        top:45%;
+        top:50%;
         transform: translateY(-50%, -50%);
         transform: rotate(90deg)
     }
