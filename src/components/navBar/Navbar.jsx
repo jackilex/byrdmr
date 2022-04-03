@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React,{useState, useEffect} from 'react';
-import { useScroolHook } from '../../hooks';
+import { useScreenHook } from '../../hooks';
 
 import './navbar.css';
 import { ReactComponent as Logo } from '../../Assets/Images/logoMain.svg';
@@ -9,10 +9,9 @@ export default function Navbar({onHandleModal}) {
   
   const [isNavItemVisible, setIsNavItemVisible] = useState( true );
   
-  const {height, stopBodyFromscrolling} = useScroolHook()
+  const {height, stopBodyFromscrolling} = useScreenHook()
 
   useEffect(() => {
-    console.log("nav",height);
     height> 225? setIsNavItemVisible(true): setIsNavItemVisible(false)
     
   }, [height])
@@ -22,13 +21,13 @@ export default function Navbar({onHandleModal}) {
     <nav className="nav">
       {!isNavItemVisible && <ul className={`list nav__list `}>
         <li className={`nav__item`}>
-          <a target="_blank" href="#">
-            Hosting
+          <a className={`nav--tag`} target="_blank" >
+            Store
           </a>
         </li>
         <li className={`nav__item`}>
-          <a target="_blank" href="#">
-            VPS
+          <a className={`nav--tag`} target="_blank">
+            Tutorials
           </a>
         </li>
       </ul>}
@@ -41,13 +40,13 @@ export default function Navbar({onHandleModal}) {
       {isNavItemVisible &&  <Menu onClick={onHandleModal} className={'menu icons'} />}
       {!isNavItemVisible && <ul className="list nav__list">
         <li className={`nav__item`}>
-          <a target="_blank" href="#">
-            Hosting
+          <a className={`nav--tag`} target="_blank" >
+            Blog
           </a>
         </li>
         <li className={`nav__item`}>
-          <a target="_blank" href="#">
-            VPS
+          <a className={`nav--tag`} target="_blank" >
+            Contact
           </a>
         </li>
       </ul>}
