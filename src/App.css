@@ -35,7 +35,9 @@
 }
 
 .fh-vwp{
-    min-height: 100vh;
+ min-height: 100vh;
+
+    
 }
 .highligth {
   background-color: var(--color-secondary);
@@ -62,4 +64,5 @@
     .highligth--title{
       margin: 0;
     }
+
 }

@@ -2,7 +2,7 @@
 .nav {
   background-color: transparent;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 3.4rem;
   padding-bottom: 1.4rem;
   width: 100vw;
@@ -11,7 +11,7 @@
   min-width: 37.5rem;
   position: fixed;
   z-index: 99;
- 
+  padding-right: 3.9rem;
 }
 
 .nav--tag:active {
@@ -19,7 +19,8 @@
 }
 
 .nav--menu {
-  margin-right: 2.7rem;
+  margin-right: 3.9rem;
+  
 }
 
 .menu {
@@ -38,7 +39,21 @@
   margin-right: auto;
 }
 
-
+.scoial--icons{
+  display: none;
+}
+@media screen and (min-width: 768px) {
+.scoial--icons{
+  display: block;
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3.9rem;
+}
+}
+.nav--logo{
+  padding-right: 3.9rem;
+}
 @media screen and (min-width: 1440px) {
   .nav--menu {
     display: none;
@@ -62,6 +77,5 @@
   }
   .menu {
   display: block;
-  margin-right: 2.7rem;
 }
 }
