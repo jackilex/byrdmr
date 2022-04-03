@@ -11,9 +11,10 @@
   background-size: 80%;
   margin: auto;
   position: relative;
-  height: calc(100vh - 105px - 353px);
+  height: calc(100vh - 24px - 353px);
   max-height: 26.6rem;
   max-width: 32.2rem;
+   min-height: 24.8rem;
   /* max-height: 22.6rem;
   max-width: auto; */
 }
@@ -22,12 +23,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
 }
 .Craft--secondary_container {
   padding-left: 2.7rem;
+ 
 }
 
 .Craft--secondary_body {
+  min-height: 35rem;
 }
 
 .plus--one {
@@ -97,13 +101,15 @@
 .zoom--close{
     position: absolute;
     top: 0;
-    right: 0;
+    right: -6px;
     background-color: black;
   }
 @media screen and (min-width: 768px) {
   .Craft--section_image {
     max-height: 364px;
     max-width: 44rem;
+    min-height: 33.4rem;
+    min-width: 44rem
   }
   .Craft--section_container {
     padding-top: 13%;
@@ -128,15 +134,10 @@
    
   }
   .zoom--feature {
-    /* top: 50%;
-    left: -70%;
-    transform: translate(-50%, -50%); */
     margin: 0;
-    /* width: 55.9rem; */
     max-width: none;
-    height: 60%;
-    width: auto;
-    max-height: 62.7rem;
+    height: auto;
+    height: 62.7rem;
     justify-self: center;
     position: relative;
   }

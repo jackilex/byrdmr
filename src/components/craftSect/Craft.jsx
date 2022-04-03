@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react';
 
 import { useScreenHook } from '../../hooks';
+import Bounce from 'react-reveal/Bounce';
 import './craft.css';
 import { ReactComponent as Tab } from '../../Assets/Images/crafttab.svg';
 import { ReactComponent as PlusOne } from '../../Assets/Images/plus.svg';
@@ -35,7 +36,8 @@ export default function Craft( {
           backgroundImage: `url("/Assets/Images/Shadow.png")`,
         }}
       >
-        <img src="/Assets/Images/Drone.png" alt="drone" />
+        
+          <img src="/Assets/Images/Drone.png" alt="drone" />
         <PlusOne
           className={`plus plus--one icons ${ plusOne && "activated" }`}
           width={40}
@@ -61,7 +63,8 @@ export default function Craft( {
           height={40} 
           onClick={setPlusFour}
           />
-      </div>
+        </div>
+
       {((plusOne || plusTwo || plusFour || plusThree) && (!isDesktop)) &&  <div className="zoom--feature">
           <CloseIcon
             className="zoom--close icons"

@@ -11,6 +11,7 @@
   background-position: bottom center;
   background-size: 80%;
   height: calc(100vh - 424px - 68px);
+  min-height: 30rem;
   max-width: 41rem;
   max-height: 33.8rem;
 }
@@ -83,6 +84,7 @@
   }
   .home--section_image {
     height: calc(100vh - 305px - 68px);
+    min-height: ;
   }
 
   .home--section_secondary > h1 {
