@@ -14,7 +14,9 @@
  
 }
 
-
+.nav--tag:active {
+  font-weight: bold;
+}
 
 .nav--menu {
   margin-right: 2.7rem;

@@ -10,7 +10,9 @@
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 80%;
-
+  height: calc(100vh - 424px - 68px);
+  max-width: 41rem;
+  max-height: 33.8rem;
 }
 
 .home--section_image > img {
@@ -58,8 +60,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .home--section_image{
+  .home--section_container{
+    padding-top: 13%;
+  }
+  .home--section_image {
     max-width: 54.4rem;
+    max-height: 44.9rem;
   }
   .home--section_secondary > h1 {
     font-weight: 700;
@@ -72,13 +78,17 @@
 }
 
 @media screen and (min-width: 1440px) {
-
+  .home--section_container{
+    padding-top: 6.8rem;
+  }
+  .home--section_image {
+    height: calc(100vh - 305px - 68px);
+  }
 
   .home--section_secondary > h1 {
     font-weight: 700;
     font-size: 235px;
-    line-height: 265px;
+    line-height: 170px;
     letter-spacing: 18.8px;
-    
   }
 }

@@ -21,13 +21,13 @@ export default function Navbar({onHandleModal}) {
     <nav className="nav">
       {!isNavItemVisible && <ul className={`list nav__list `}>
         <li className={`nav__item`}>
-          <a target="_blank" href="#">
-            Hosting
+          <a className={`nav--tag`} target="_blank" >
+            Store
           </a>
         </li>
         <li className={`nav__item`}>
-          <a target="_blank" href="#">
-            VPS
+          <a className={`nav--tag`} target="_blank">
+            Tutorials
           </a>
         </li>
       </ul>}
@@ -40,13 +40,13 @@ export default function Navbar({onHandleModal}) {
       {isNavItemVisible &&  <Menu onClick={onHandleModal} className={'menu icons'} />}
       {!isNavItemVisible && <ul className="list nav__list">
         <li className={`nav__item`}>
-          <a target="_blank" href="#">
-            Hosting
+          <a className={`nav--tag`} target="_blank" >
+            Blog
           </a>
         </li>
         <li className={`nav__item`}>
-          <a target="_blank" href="#">
-            VPS
+          <a className={`nav--tag`} target="_blank" >
+            Contact
           </a>
         </li>
       </ul>}
