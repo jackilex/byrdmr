@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React,{ useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive'
 
-export const useScroolHook = () => {
-  const [isVisible, setIsVisible] = useState(true);
+export const useScreenHook = () => {
   const [height, setHeight] = useState(0);
   useEffect(() => {
     window.addEventListener('scroll', listenToScroll);
@@ -9,20 +9,30 @@ export const useScroolHook = () => {
   }, []);
 
   const listenToScroll = () => {
-    let heightToHideFrom = 200;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
     setHeight(winScroll);
-    
-    if (winScroll > heightToHideFrom) {
-      isVisible && setIsVisible(false);
-    } else {
-      setIsVisible(true);
-    }
+
   };
-    
+  const isMobileDevice = useMediaQuery({
+    query: "(min-device-width: 480px)",
+  });
+
+  const isTabletDevice = useMediaQuery({
+    query: "(min-device-width: 768px)",
+  });
+
+
+  const isDesktop = useMediaQuery({
+    query: "(min-device-width: 1440px)",
+  });
+
+
 
     return {
-        height,
+      height,
+      isDesktop,
+      isMobileDevice,
+      isTabletDevice
     }
 };

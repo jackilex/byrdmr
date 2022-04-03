@@ -21,7 +21,7 @@
 }
 
 .menu {
-  margin-right: 2.7rem;
+  display: none;
 }
 .nav__list {
   display: none;
@@ -58,4 +58,8 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+  .menu {
+  display: block;
+  margin-right: 2.7rem;
+}
 }

@@ -1,10 +1,11 @@
-.craft--section_container {
-  background-color: orange;
+.Craft--section_container {
+  background-color: white;
   padding-top: 6.8rem;
   position: relative;
+  background-color: red;
 }
 
-.craft--section_image {
+.Craft--section_image {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 80%;
@@ -12,20 +13,19 @@
   position: relative;
 }
 
-.craft--section_image > img {
+.Craft--section_image > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.craft--secondary_container {
+.Craft--secondary_container {
   padding-left: 2.7rem;
 }
 
-.craft--secondary_body {
+.Craft--secondary_body {
 }
 
-.plus--one{
-  fill: red;
+.plus--one {
   position: absolute;
   top: 0;
   left: 50%;
@@ -33,7 +33,6 @@
 }
 
 .plus--two {
-  fill: red;
   position: absolute;
   top: 40%;
   left: 40%;
@@ -41,7 +40,6 @@
 }
 
 .plus--three {
-  fill: red;
   position: absolute;
   top: 80%;
   left: 8%;
@@ -49,30 +47,89 @@
 }
 
 .plus--four {
-  fill: red;
   position: absolute;
   top: 70%;
   left: 80%;
   transform: translate(-50%, -50%);
 }
+
+.zoom--feature {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  height: 44rem;
+  background-color: #efefef;
+  /* width: 90%; */
+  width: 244.81px;
+  max-width: 340px;
+  margin: auto;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zoom--feature > img {
+  width: auto;
+  height: 24rem;
+}
+
+.zoom--close {
+  align-self: flex-end;
+}
+
+.plus {
+  fill: #8c8684;
+}
+
+.plus.activated {
+  fill: orange;
+}
+
+.Craft--section_image.hide {
+  display: none;
+  height: 0;
+}
 @media screen and (min-width: 768px) {
-  .craft--section_image {
+  .Craft--section_image {
     max-width: 44rem;
   }
-  .craft--section_container {
+  .Craft--section_container {
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .craft--section_container {
+  .Craft--section_container {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     padding-top: 21.4rem;
   }
-  .craft--section_image {
+  .Craft--section_image {
     order: 2;
-    max-width: 54.7rem;
+    /* max-width: 54.7rem; */
     margin: 0;
   }
+  .zoom--feature {
+    /* top: 50%;
+    left: -70%;
+    transform: translate(-50%, -50%); */
+    margin: 0;
+    width: 100%;
+  }
+  .Craft--section_image.hide {
+  display: block;
+}
+
+.Craft--secondary_container.zoom-activated{
+  display: none;
+  /* height: 0; */
+}
+
+.zoom--feature>img{
+ /* width: auto;
+ height: 100%; */
+}
 }

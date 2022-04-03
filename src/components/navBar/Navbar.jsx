@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React,{useState, useEffect} from 'react';
-import { useScroolHook } from '../../hooks';
+import { useScreenHook } from '../../hooks';
 
 import './navbar.css';
 import { ReactComponent as Logo } from '../../Assets/Images/logoMain.svg';
@@ -9,10 +9,9 @@ export default function Navbar({onHandleModal}) {
   
   const [isNavItemVisible, setIsNavItemVisible] = useState( true );
   
-  const {height, stopBodyFromscrolling} = useScroolHook()
+  const {height, stopBodyFromscrolling} = useScreenHook()
 
   useEffect(() => {
-    console.log("nav",height);
     height> 225? setIsNavItemVisible(true): setIsNavItemVisible(false)
     
   }, [height])

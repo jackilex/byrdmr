@@ -16,7 +16,7 @@ export default function Modal({ onModal, onHandleModal }) {
           <div className="logo--modal">
             <img src="/Assets/Images/logoallwhite.png" alt="logo" />
           </div>
-          <CloseIcon className="icons" onClick={handleClose} />
+          <CloseIcon fill="white" className="icons" onClick={handleClose} />
         </div>
         <div className="modal--body">
           <div className="modal--body_image">
