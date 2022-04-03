@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { useScreenHook } from '../../hooks';
 
 import './navbar.css';
-import { ReactComponent as Logo } from '../../Assets/Images/logoMain.svg';
 import { ReactComponent as Menu } from '../../Assets/Images/menu.svg';
 import { ReactComponent as Fb } from '../../Assets/Images/fb.svg';
 import { ReactComponent as Ig } from '../../Assets/Images/ig.svg';
+import logo from '../../Assets/Images/Logo.png'
 export default function Navbar( { onHandleModal } )
 {
 
@@ -39,8 +39,7 @@ export default function Navbar( { onHandleModal } )
       <div
         className={'nav--logo_container'}
       >
-        {/* <Logo className={'nav--logo'} /> */}
-        <img className={'nav--logo'} src="/Assets/Images/Logo.png" alt="logo" />
+        <img className={'nav--logo'} src={logo} alt="logo" />
       </div>
       <Menu onClick={onHandleModal} className={'nav--menu icons'} />
       {isNavItemVisible && <Menu onClick={onHandleModal} className={'menu icons'} />}

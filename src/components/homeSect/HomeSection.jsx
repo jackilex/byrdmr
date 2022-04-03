@@ -1,6 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import './homeSection.css';
+import drone from "../../Assets/Images/Drone.png"
 export default function HomeSection() {
   return (
     <section className={'home--section_container fh-vwp'}>
@@ -11,7 +12,7 @@ export default function HomeSection() {
         }}
       >
         <Fade right>
-          <img src="/Assets/Images/Drone.png" alt="" />
+          <img src={drone} alt="" />
         </Fade>
       </div>
       <div className={'home--section_secondary'}>

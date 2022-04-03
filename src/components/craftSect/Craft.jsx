@@ -1,7 +1,6 @@
 import React,{useEffect} from 'react';
 
 import { useScreenHook } from '../../hooks';
-import Bounce from 'react-reveal/Bounce';
 import './craft.css';
 import { ReactComponent as Tab } from '../../Assets/Images/crafttab.svg';
 import { ReactComponent as PlusOne } from '../../Assets/Images/plus.svg';
@@ -9,7 +8,8 @@ import { ReactComponent as PlusTwo } from '../../Assets/Images/plus.svg';
 import { ReactComponent as PlusThree } from '../../Assets/Images/plus.svg';
 import { ReactComponent as PlusFour } from '../../Assets/Images/plus.svg';
 import { ReactComponent as CloseIcon } from '../../Assets/Images/closeIcon.svg';
-
+import drone from '../../Assets/Images/Drone.png'
+import shadow from "../../Assets/Images/Shadow.png"
 export default function Craft( {
   plusOne,
   plusTwo,
@@ -33,11 +33,11 @@ export default function Craft( {
       <div
         className={`Craft--section_image ${((plusOne || plusTwo || plusFour || plusThree) && (!isDesktop)) && 'hide'}`}
         style={{
-          backgroundImage: `url("/Assets/Images/Shadow.png")`,
+          backgroundImage: `url(${shadow})`,
         }}
       >
         
-          <img src="/Assets/Images/Drone.png" alt="drone" />
+          <img src={drone} alt="drone" />
         <PlusOne
           className={`plus plus--one icons ${ plusOne && "activated" }`}
           width={40}
