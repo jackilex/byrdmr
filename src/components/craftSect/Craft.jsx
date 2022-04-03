@@ -67,7 +67,7 @@ export default function Craft( {
             className="zoom--close icons"
             width={40}
             height={40}
-            fill="black"
+            fill="gray"
             onClick={onClose}
           />
         { plusOne && <img src="/Assets/Images/zoom1.png" alt="dronepad" />}
@@ -87,7 +87,7 @@ export default function Craft( {
             className="zoom--close icons"
             width={40}
             height={40}
-            fill="black"
+            fill="gray"
             onClick={onClose}
           />
         { plusOne && <img src="/Assets/Images/zoom1.png" alt="dronepad" />}
