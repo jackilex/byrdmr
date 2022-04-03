@@ -60,10 +60,6 @@ during this project I followed an easy git workflow to managed this project.
 - [Alex Saint Victor](https://github.com/jackilex)
 
 
-## Installation
-
-=======
-
 # About - Byrdmr
 
 This project was build using bare React, it compose of a 
