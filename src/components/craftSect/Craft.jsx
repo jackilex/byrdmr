@@ -10,6 +10,10 @@ import { ReactComponent as PlusFour } from '../../Assets/Images/plus.svg';
 import { ReactComponent as CloseIcon } from '../../Assets/Images/closeIcon.svg';
 import drone from '../../Assets/Images/Drone.png'
 import shadow from "../../Assets/Images/Shadow.png"
+import zoom1 from "../../Assets/Images/zoom1.png"
+import zoom2 from "../../Assets/Images/zoom2.png"
+import zoom3 from "../../Assets/Images/zoom3.png"
+import zoom4 from "../..//Assets/Images/f210_032.png"
 export default function Craft( {
   plusOne,
   plusTwo,
@@ -93,10 +97,10 @@ export default function Craft( {
             fill="gray"
             onClick={onClose}
           />
-        { plusOne && <img src="/Assets/Images/zoom1.png" alt="dronepad" />}
-        { plusTwo && <img src="/Assets/Images/zoom2.png" alt="dronepad" />}
-        { plusThree && <img src="/Assets/Images/zoom3.png" alt="dronepad" />}
-        { plusFour && <img src="/Assets/Images/f210_032.png" alt="dronepad" />}
+        { plusOne && <img src={zoom1}alt="dronepad" />}
+        { plusTwo && <img src={zoom2} alt="dronepad" />}
+        { plusThree && <img src={zoom3}alt="dronepad" />}
+        { plusFour && <img src={zoom4}alt="dronepad" />}
         </div>}
     </section>
   );

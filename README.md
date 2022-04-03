@@ -1,70 +1,64 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About - Byrdmr
 
-## Available Scripts
+This project was build using bare React, it compose of a 
+single page for a landing site
 
-In the project directory, you can run:
+For this project I was given only the design. In a typical project I would have
+communicate the design intent with the designers. In this scenario I had 
+to make my own assumptions on how the design should look.
 
-### `npm start`
+## assumptions
+based on the folder provided there was a design called new that had 
+one single page with multiple sections. the assumption base on the designed
+is that each section should take 100vh of user
+s screen
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[site url](https://jackilex.github.io/byrdmr/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Zoom feature when clicked on specific section of image
+- A form to submit any questions
+- navbar changes based on user scroll location
+- modal for table and mobile
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Documentation
+main packages used:
+- React
+- React Hook Form - for form control
+- react-reveal for animation
+- gh-page to push to github pages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Strategy
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### design
+- using Figma I open the sketch files to gather all information required
+such as colors, typhogray, text sizes etc.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Setup
+- after settying up a simple create react app, I first started settying
+up my css.
+    - normalize css
+    - typhogray and google Fonts
+    - the color variables
+    - assets folder
+    - for css naming I used the BEM model, and DRY. with that been said each component had their own files and all global css that does not belong
+in typhogray was place inside the App.css file.
 
-### `npm run eject`
+- Javascript/react: This site didn't not require a lot of state management, but in the case of the modal and the zoom feature when the user clicked on the plus sign.
+These wer managed using react hooks. The navbar which changed base on the user location was managed with a cutom hook. Through ou this project, I used functional programming.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### git workflow
+during this project I followed an easy git workflow to managed this project.
+- never pushed directly to main or master
+- create branch for each feature and constant commits
+## Authors
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Alex Saint Victor](https://github.com/jackilex)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Simply clone this repo and run "nom start" or access site directly [site url](https://jackilex.github.io/byrdmr/)
