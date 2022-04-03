@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/byrdmr/static/css/main.2d8844fd.css",
+    "main.js": "/byrdmr/static/js/main.56b0fbae.js",
+    "static/js/787.ada4e6f5.chunk.js": "/byrdmr/static/js/787.ada4e6f5.chunk.js",
+    "static/media/Drone.png": "/byrdmr/static/media/Drone.505e036cb27e6c433123.png",
+    "static/media/ig.svg": "/byrdmr/static/media/ig.19ca701617d81831b7719ac8df4d3f35.svg",
+    "static/media/plus.svg": "/byrdmr/static/media/plus.543d8ed069507322b3602b9ceedf4072.svg",
+    "index.html": "/byrdmr/index.html",
+    "static/media/fb.svg": "/byrdmr/static/media/fb.2d46d23d7f8d758acf5c687f9b3d7b47.svg",
+    "static/media/closeIcon.svg": "/byrdmr/static/media/closeIcon.9de3e143e329c848e54a08574c266050.svg",
+    "static/media/crafttab.svg": "/byrdmr/static/media/crafttab.9e6c13cd9cc2e70b96736d1ccd1aa88a.svg",
+    "static/media/menu.svg": "/byrdmr/static/media/menu.a0e5fe98278f902989a474e4a16c3156.svg",
+    "static/media/arrow.svg": "/byrdmr/static/media/arrow.f2d6b8251ef8d7e0acefbb4031eda41c.svg",
+    "main.2d8844fd.css.map": "/byrdmr/static/css/main.2d8844fd.css.map",
+    "main.56b0fbae.js.map": "/byrdmr/static/js/main.56b0fbae.js.map",
+    "787.ada4e6f5.chunk.js.map": "/byrdmr/static/js/787.ada4e6f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d8844fd.css",
+    "static/js/main.56b0fbae.js"
+  ]
+}
