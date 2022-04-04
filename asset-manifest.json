@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/byrdmr/static/css/main.2d8844fd.css",
+    "main.css": "/byrdmr/static/css/main.82489856.css",
     "main.js": "/byrdmr/static/js/main.a6a2b018.js",
     "static/js/787.ada4e6f5.chunk.js": "/byrdmr/static/js/787.ada4e6f5.chunk.js",
     "static/media/Drone.png": "/byrdmr/static/media/Drone.505e036cb27e6c433123.png",
@@ -16,12 +16,12 @@
     "static/media/crafttab.svg": "/byrdmr/static/media/crafttab.9e6c13cd9cc2e70b96736d1ccd1aa88a.svg",
     "static/media/menu.svg": "/byrdmr/static/media/menu.a0e5fe98278f902989a474e4a16c3156.svg",
     "static/media/arrow.svg": "/byrdmr/static/media/arrow.f2d6b8251ef8d7e0acefbb4031eda41c.svg",
-    "main.2d8844fd.css.map": "/byrdmr/static/css/main.2d8844fd.css.map",
+    "main.82489856.css.map": "/byrdmr/static/css/main.82489856.css.map",
     "main.a6a2b018.js.map": "/byrdmr/static/js/main.a6a2b018.js.map",
     "787.ada4e6f5.chunk.js.map": "/byrdmr/static/js/787.ada4e6f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d8844fd.css",
+    "static/css/main.82489856.css",
     "static/js/main.a6a2b018.js"
   ]
 }
