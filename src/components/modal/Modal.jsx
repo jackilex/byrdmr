@@ -1,7 +1,8 @@
 import React from 'react';
 import Slide from 'react-reveal/Slide';
 import { ReactComponent as CloseIcon } from '../../Assets/Images/closeIcon.svg';
-import logo2 from "../../Assets/Images/logoallwhite.png"
+import logo2 from "../../Assets/Images/logoallwhite.png";
+import drone from "../../Assets/Images/Drone.png"
 import './modal.css';
 export default function Modal({ onModal, onHandleModal }) {
  const handleClose = ()=>{
@@ -21,7 +22,7 @@ export default function Modal({ onModal, onHandleModal }) {
         </div>
         <div className="modal--body">
           <div className="modal--body_image">
-            <img src="/Assets/Images/Drone.png" alt="drone" />
+            <img src={drone} alt="drone" />
           </div>
           <div className="modal--body_list">
             <ul className="list modal-nav__list">
